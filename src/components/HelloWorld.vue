@@ -75,7 +75,7 @@
             </Select>
             <Button type="info" @click="queryData(that.idIndex)">查询</Button>
             <div>
-              <Table border :columns="columns1" :data="data1"></Table>
+              <Table border :columns="columns1" :data="messageID"></Table>
             </div>
 
           </Content>
@@ -97,56 +97,30 @@ export default {
     return {
     columns1: [
                     {
-                        title: 'Name',
-                        key: 'name'
+                        title: 'ID',
+                        key: 'id'
                     },
                     {
-                        title: 'Age',
-                        key: 'age'
+                        title: 'Value',
+                        key: 'value'
                     },
                     {
-                        title: 'Address',
-                        key: 'address'
-                    }
-                ],
-                data1: [
-                    {
-                        name: 'John Brown',
-                        age: 18,
-                        address: 'New York No. 1 Lake Park',
-                        date: '2016-10-03'
-                    },
-                    {
-                        name: 'Jim Green',
-                        age: 24,
-                        address: 'London No. 1 Lake Park',
-                        date: '2016-10-01'
-                    },
-                    {
-                        name: 'Joe Black',
-                        age: 30,
-                        address: 'Sydney No. 1 Lake Park',
-                        date: '2016-10-02'
-                    },
-                    {
-                        name: 'Jon Snow',
-                        age: 26,
-                        address: 'Ottawa No. 2 Lake Park',
-                        date: '2016-10-04'
+                        title: 'Label',
+                        key: 'label'
                     }
                 ],
      messageID:[],
      that:this,
      idIndex:null,
      idData:[
-      {id:1001,messageID:{id:10011001,value: 'New York01',label: 'New York01'}},
-      {id:1001,messageID:{id:10011002,value: 'New York01',label: 'New York01'}},
-      {id:1002,messageID:{id:10011003,value: 'New York01',label: 'New York01'}},
-      {id:1002,messageID:{id:10011004,value: 'New York01',label: 'New York01'}},
-      {id:2001,messageID:{id:10011005,value: 'New York01',label: 'New York01'}},
-      {id:2001,messageID:{id:10011006,value: 'New York01',label: 'New York01'}},
-      {id:2002,messageID:{id:10011007,value: 'New York01',label: 'New York01'}},
-      {id:2002,messageID:{id:10011008,value: 'New York01',label: 'New York01'}},
+      {id:1001,messageID:{id:10011001,value: 'New York01',label: 'New York09'}},
+      {id:1001,messageID:{id:10011002,value: 'New York02',label: 'New York10'}},
+      {id:1002,messageID:{id:10011003,value: 'New York03',label: 'New York11'}},
+      {id:1002,messageID:{id:10011004,value: 'New York04',label: 'New York12'}},
+      {id:2001,messageID:{id:10011005,value: 'New York05',label: 'New York13'}},
+      {id:2001,messageID:{id:10011006,value: 'New York06',label: 'New York14'}},
+      {id:2002,messageID:{id:10011007,value: 'New York07',label: 'New York15'}},
+      {id:2002,messageID:{id:10011008,value: 'New York08',label: 'New York16'}},
      ],
      cityListItem:[
       {title:"New York",content:{id:1001,value: 'New York01',label: 'New York01'}},
